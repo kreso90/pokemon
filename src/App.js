@@ -1,8 +1,8 @@
 import React from 'react'
-import Home from './Home'
-import PokemonList from './PokemonList'
-import SinglePokemon from './SinglePokemon'
-import logo from './img_poke_logo.svg'
+import Home from './components/Home'
+import PokemonList from './components/PokemonList'
+import SinglePokemon from './components/SinglePokemon'
+import logo from './img/img_poke_logo.svg'
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 
 function App() {

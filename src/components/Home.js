@@ -1,14 +1,13 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios';
-import logo from './img_poke_logo.svg'
-import bulbasaur from './pokemons/img_bulbasaur.png'
-import ivysaur from './pokemons/img_ivysaur.png'
-import venusaur from './pokemons/img_venusaur.png'
-import charmander from './pokemons/img_charmander.png'
-import charmeleon from './pokemons/img_charmeleon.png'
+import logo from '../img/img_poke_logo.svg'
+import bulbasaur from '../img/img_bulbasaur.png'
+import ivysaur from '../img/img_ivysaur.png'
+import venusaur from '../img/img_venusaur.png'
+import charmander from '../img/img_charmander.png'
+import charmeleon from '../img/img_charmeleon.png'
 import {CSSTransition} from "react-transition-group"
 import useLocalStorageState from "use-local-storage-state";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function Home() {
   const randomNum1 = Math.floor(Math.random() * 5) + 1;

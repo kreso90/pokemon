@@ -1,10 +1,5 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios';
-import bulbasaur from './pokemons/img_bulbasaur.png'
-import ivysaur from './pokemons/img_ivysaur.png'
-import venusaur from './pokemons/img_venusaur.png'
-import charmander from './pokemons/img_charmander.png'
-import charmeleon from './pokemons/img_charmeleon.png'
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 
 
@@ -44,14 +39,14 @@ function SinglePokemon({match}) {
                     
                     <div className="label">Abilities</div>
                     <div className="abilities">
-                        {abilities.map(abiliti => (
-                            <span>{abiliti.ability.name}, </span>
+                        {abilities.map((abiliti, index) => (
+                            <span key={index}>{abiliti.ability.name}, </span>
                         ))}
                     </div>
                     <div className="label">Stats</div>
                     <div className="single-pokemon-row">
-                        {stats.map(stats => (
-                        <div className="stats">
+                        {stats.map((stats,index) => (
+                        <div key={index} className="stats">
                             <div className="stats-main-wrapper">
                                 <div className="stats-wrapper">
                                     <p className="stat-name">{stats.stat.name}</p>
